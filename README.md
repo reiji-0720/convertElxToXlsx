@@ -9,6 +9,10 @@ convert.pyで行いたいモジュールの関数を呼び出す。
 - convert.pyのあるディレクトリ下全てのxlsを変換する。  
 
 ---
+### 動作環境
+- python 3.9.0
+- mac book pro 13-inch,2017,Two Thunderbolt 3 ports
+- macOS Monterey (version:12.3.1)
 
 ### ディレクトリ構造
 ```
@@ -45,4 +49,5 @@ $ pip install pyexcel
 $ pip install pyexcel-xls  
 $ pip install pyexcel-xlsx  
 $ pip install glob  
+$ pip install openpyxl  
 ```
