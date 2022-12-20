@@ -1,8 +1,13 @@
 import pyexcel as p
 import glob
-from libs import convert_xls_to_xlsx
+from libs import convert_xls_to_xlsx as convert
 
 
-convert_xls_to_xlsx.convert_type_current()
+convert.convert_type_current()
+# convert.open()
+
+
+# convert.simple_check()
+
 
 
