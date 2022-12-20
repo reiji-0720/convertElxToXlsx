@@ -1,7 +1,4 @@
 # convertElxToXlsx
 xlsファイルをxlsxファイルに変換
 
-てすと
-
-
-aaaa
+convert.pyを実行することでconvert.py以下のディレクトリの.xlsを.xlsxに変換する
