@@ -19,20 +19,7 @@ def simple_check():
         for filename in filenames:
             if filename.endswith('.xls'): # フィルタ処理 csvのみ処理
                 filename = os.path.join(*pathname,filename) # ファイルの相対パス取得
-
                 convertion(filename)
-
-                # app = xlwings.App() # appの開始
-                # # wb = app.books.open(filename) # ファイルオープン
-                # wb = app.books.open('.'+filename) # ファイルオープン
-
-                # print(filename)
-                # print(filename_only)
-                # filename_only = '.'+ filename_only + '.xlsx'
-                # print('filename_only : '+ filename_only)
-                # wb.save(filename_only)
-                # wb.close()
-                # app.quit() # appの終了
                 i += 1
 
 
