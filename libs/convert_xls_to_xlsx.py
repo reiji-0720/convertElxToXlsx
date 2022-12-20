@@ -1,11 +1,6 @@
 import pyexcel as p
 import glob
 import os
-import openpyxl
-import xlwt
-
-import subprocess
-
 import xlwings
 
 
@@ -23,24 +18,32 @@ def simple_check():
     for pathname,dirname, filenames in os.walk("./"):
         for filename in filenames:
             if filename.endswith('.xls'): # フィルタ処理 csvのみ処理
-
-                app = xlwings.App() # appの開始
                 filename = os.path.join(*pathname,filename) # ファイルの相対パス取得
-                filename_only = os.path.splitext(filename)[0].strip('/') # ファイル名拡張子なし
-                # wb = app.books.open(filename) # ファイルオープン
-                wb = app.books.open('.'+filename) # ファイルオープン
-                # pg = wb.macro('マクロ名')
-                # pg()
 
+                convertion(filename)
 
-                # print(os.path.join(pathname,filename))
-                print(filename)
-                print(filename_only)
-                # wb.save(filename = os.path.splitext(filename)[0] + ".xlsx")
-                wb.close()
-                app.quit() # appの終了
+                # app = xlwings.App() # appの開始
+                # # wb = app.books.open(filename) # ファイルオープン
+                # wb = app.books.open('.'+filename) # ファイルオープン
+
+                # print(filename)
+                # print(filename_only)
+                # filename_only = '.'+ filename_only + '.xlsx'
+                # print('filename_only : '+ filename_only)
+                # wb.save(filename_only)
+                # wb.close()
+                # app.quit() # appの終了
                 i += 1
 
-def open():
-    excel = 'sample.xls'
-    subprocess.run(['open',excel])
+
+def convertion(filename):
+    app = xlwings.App() # appの開始
+    filename_only = os.path.splitext(filename)[0] # ファイル名拡張子なし
+    wb = app.books.open('.'+filename) # ファイルオープン
+    print(filename)
+    print(filename_only)
+    filename_only = '.'+ filename_only + '.xlsx'
+    print('filename_only : '+ filename_only)
+    wb.save(filename_only)
+    wb.close()
+    app.quit() # appの終了
