@@ -8,6 +8,20 @@ convert.pyで行いたいモジュールの関数を呼び出す。
 - convert.pyのあるディレクトリ内のxlsを変換する.(カレントディレクトリのみ下の階層までは見ない)  
 - convert.pyのあるディレクトリ下全てのxlsを変換する。  
 
+---
+
+### ディレクトリ構造
+.
+├── README.md
+├── convert.py
+├── libs
+│   ├── __pycache__
+│   │   └── convert_xls_to_xlsx.cpython-39.pyc
+│   └── convert_xls_to_xlsx.py
+└── sample.xls
+
+---
+
 ### モジュール  
 ```./libs/```に格納
 
