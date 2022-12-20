@@ -22,8 +22,8 @@ xlsファイルを残した状態で新規にxlsxファイルを作成する。
 
 ### モジュールの追加  
 ```
- pip install pyexcel  
- pip install pyexcel-xls  
- pip install pyexcel-xlsx  
- pip install glob  
+$ pip install pyexcel  
+$ pip install pyexcel-xls  
+$ pip install pyexcel-xlsx  
+$ pip install glob  
 ```
