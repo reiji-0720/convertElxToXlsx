@@ -2,7 +2,7 @@
 xlsファイルをxlsxファイルに変換
 ---
 
-convert.pyを実行することでconvert.py以下のディレクトリの.xlsを.xlsxに変換する  
+convert.pyを実行することで.xlsを.xlsxに変換する  
 convert.pyで行いたいモジュールの関数を呼び出す。  
 #### 可能な操作  
 - convert.pyのあるディレクトリ内のxlsを変換する.(カレントディレクトリのみ下の階層までは見ない)  
@@ -28,6 +28,7 @@ convert.pyで行いたいモジュールの関数を呼び出す。
 
 
 #### convert_xls_to_xlsx.py  
+基本的にこのファイルにある関数をconvert.pyで呼び出すだけ
 ++関数++  
 
 - convert_type_current()  
@@ -36,6 +37,7 @@ convert.pyで行いたいモジュールの関数を呼び出す。
 xlsファイルを残した状態で新規にxlsxファイルを作成する。  
 
 ### モジュールの追加  
+python実行前にCLIで以下のモジュールのインストールを行なってください。  
 #### CLI
 ```
 $ pip install pyexcel  
