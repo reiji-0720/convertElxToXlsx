@@ -21,6 +21,7 @@ convert.pyで行いたいモジュールの関数を呼び出す。
 xlsファイルを残した状態で新規にxlsxファイルを作成する。  
 
 ### モジュールの追加  
+#### CLI
 ```
 $ pip install pyexcel  
 $ pip install pyexcel-xls  
