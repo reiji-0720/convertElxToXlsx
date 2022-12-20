@@ -28,8 +28,8 @@ convert.pyで行いたいモジュールの関数を呼び出す。
 
 
 #### convert_xls_to_xlsx.py  
-基本的にこのファイルにある関数をconvert.pyで呼び出すだけ
-++関数++  
+基本的にこのファイルにある関数をconvert.pyで呼び出すだけ  
+**関数**  
 
 - convert_type_current()  
 カレントディレクトリ内に存在するxlsファイルをxlsxファイルに変換する。  
