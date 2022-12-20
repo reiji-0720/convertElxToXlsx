@@ -9,8 +9,7 @@ convert.pyで行いたいモジュールの関数を呼び出す。
 - convert.pyのあるディレクトリ下全てのxlsを変換する。  
 
 ### モジュール  
-> ./libs/
-に格納
+'''./libs/'''に格納
 
 
 #### convert_xls_to_xlsx.py  
