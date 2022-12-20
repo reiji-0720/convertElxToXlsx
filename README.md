@@ -49,5 +49,22 @@ $ pip install pyexcel
 $ pip install pyexcel-xls  
 $ pip install pyexcel-xlsx  
 $ pip install glob  
+$ pip install xlwings  
+
+#########################
+↓ あまり意味がなかったモジュール  
+#########################
 $ pip install openpyxl  
+$ pip install xlrd  
+$ pip install xlwt  
 ```
+#### 備考
+xlsxファイルを操作する時に使用するopenpyxlライブラリはxls形式をサポートしていないので意外と簡単に行かない  
+EXCEL上でxlsファイルを開いて「上書き保存」でxlsxにすると基本的にレイアウトが崩れないので行おうとしたが不可能だった  
+xls対応モジュールのxlwtはxlsx形式には対応していないので，一度開いて別名で保存する際にxlsxで保存ができない  
+pyexcelを用いた変換では拡張子の変換をかけるだけでレイアウト崩れが生じる  
+
+xlwingsライブラリはexcelのアプリケーションを実際にバックグラウンドで起動して操作を行う  
+xlwingsで基本的に行おうと考えている  
+
+そもそもVBAで作成するのもありだと考えている  
