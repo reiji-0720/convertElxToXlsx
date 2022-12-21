@@ -52,9 +52,27 @@ xlsファイルを残した状態で新規にxlsxファイルを作成する。
 一つのファイルに対して変換処理を行う  
 simple_check()では再起的にconvertion()を呼び出している  
 
+- remove()
+xlsファイルの削除  
+ディレクトリ下部に対して行う  
+
+### tree.py
+ディレクトリ構造を書き出すためのモジュール  
+(参考：@horisuke, Pythonでファイルのツリー構造を出力する,Qiita,2020年04月17日,https://qiita.com/horisuke/items/389ec60407b3baf45f25)  
+ツリーはターミナルに表示される  
+※ mac OS のみ対応、winの場合は¥区切りにする必要がある  
+
+**関数**
+tree(path)  
+ディレクトリ構造を表示したい絶対パスor相対パスを引数に当てる  
+
 ### モジュールの追加  
 python実行前にCLIで以下のモジュールのインストールを行なってください。  
 #### CLI
+めんどくさい人向け(以下のコマンドをコピーしてターミナルに貼り付けて実行するだけでモジュールのインストールが可能)
+> pip install pyexcel ; pip install pyexcel-xls ; pip install pyexcel-xlsx ; pip install glob ; pip install xlwings
+
+
 ```
 $ pip install pyexcel  
 $ pip install pyexcel-xls  
@@ -62,12 +80,37 @@ $ pip install pyexcel-xlsx
 $ pip install glob  
 $ pip install xlwings  
 
+# 　ディレクトリ構造を出したい人向け
+$ pip install pathlib
+
 #########################
 ↓ あまり意味がなかったモジュール  
 #########################
 $ pip install openpyxl  
 $ pip install xlrd  
 $ pip install xlwt  
+```
+
+
+
+### 最終的なディレクトリ構造
+```
+
+<convertElxToXlsx>
+　├<test>
+　│　├sample.xlsx
+　│　└<tes2>
+　│　　　└sample.xlsx
+　├convert.py
+　├sample.xlsx
+　├<libs>
+　│　├tree.py
+　│　├<__pycache__>
+　│　│　├tree.cpython-39.pyc
+　│　│　└convert_xls_to_xlsx.cpython-39.pyc
+　│　└convert_xls_to_xlsx.py
+　└README.md
+
 ```
 #### 備考
 xlsxファイルを操作する時に使用するopenpyxlライブラリはxls形式をサポートしていないので意外と簡単に行かない  

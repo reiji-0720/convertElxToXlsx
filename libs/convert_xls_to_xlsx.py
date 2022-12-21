@@ -19,7 +19,7 @@ def simple_check():
         for filename in filenames:
             print('pathname:'+ pathname)
             pathname_stack = pathname # filename文字列の保有（そのままpathnameで渡すとpathがうまく行かない）
-            if filename.endswith('.xls'): # フィルタ処理 csvのみ処理
+            if filename.endswith('.xls'): # フィルタ処理 xlsのみ処理
                 filenameTo = os.path.join(pathname_stack,filename) # ファイルの相対パス取得
                 print('filename' + filename)
                 convertion(filenameTo)
@@ -37,3 +37,16 @@ def convertion(filename):
     wb.save(filename_only)
     wb.close()
     app.quit() # appの終了
+
+
+def remove():
+    i = 0
+    for pathname,dirname, filenames in os.walk("./"):
+        for filename in filenames:
+            print('pathname:'+ pathname)
+            pathname_stack = pathname # filename文字列の保有（そのままpathnameで渡すとpathがうまく行かない）
+            if filename.endswith('.xls'): # フィルタ処理 xlsのみ処理
+                filenameTo = os.path.join(pathname_stack,filename) # ファイルの相対パス取得
+                print('filename' + filename)
+                os.remove(filenameTo) # ファイルの削除
+                i += 1
