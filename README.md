@@ -133,6 +133,9 @@ $ pip install xlwt
 
 ```
 
+## ライブラリごとの比較
+<img width="1680" alt="image" src="https://user-images.githubusercontent.com/55520463/208819781-c44a4c42-480b-4d51-a1aa-1f7c596b7ca5.png">
+
 
 #### 備考
 xlsxファイルを操作する時に使用するopenpyxlライブラリはxls形式をサポートしていないので意外と簡単に行かない  
