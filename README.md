@@ -135,6 +135,7 @@ $ pip install xlwt
 
 ## ライブラリごとの比較
 <img width="1680" alt="image" src="https://user-images.githubusercontent.com/55520463/208819781-c44a4c42-480b-4d51-a1aa-1f7c596b7ca5.png">
+<img width="1680" alt="image" src="https://user-images.githubusercontent.com/55520463/208820156-d9bf4dba-5810-4d48-be5e-ed6230348cd9.png">
 
 
 #### 備考
