@@ -61,17 +61,17 @@ convert.pyで行いたいモジュールの関数を呼び出す。
 xlsファイルを残した状態で新規にxlsxファイルを作成する。  
 
 
-- simple_check()
+- simple_check()  
 カレントディレクトリ内に存在するxlsファイルをxlsxファイルに変換する。  
 拡張子の変更のみ可能。返還後のxlsxファイルはデータは保たれるがレイアウトが崩れる場合がある。  
 convert_type_current()よりもレイアウトは崩れない  
 xlsファイルを残した状態で新規にxlsxファイルを作成する。  
 
-- convertion()
+- convertion()  
 一つのファイルに対して変換処理を行う  
 simple_check()では再起的にconvertion()を呼び出している  
 
-- remove()
+- remove()  
 xlsファイルの削除  
 ディレクトリ下部に対して行う  
 
