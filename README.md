@@ -7,9 +7,9 @@ convert.pyで行いたいモジュールの関数を呼び出す。
 
 ## 使用方法  
 
-1. xls→xlsx変換を行いたいディレクトリに移動
-2. convert.pyと./libs をカレントディレクトリに配置
-3. convert.pyで行いたい動作に対応する関数を呼び出し（変換以外はコメントアウトしている）
+1. xls→xlsx変換を行いたいディレクトリに移動する
+2. convert.pyと./libs をカレントディレクトリに配置する
+3. convert.pyで行いたい動作に対応する関数を呼び出す（変換以外はコメントアウトしている）
 4. ターミナルで```pip install pyexcel ; pip install pyexcel-xls ; pip install pyexcel-xlsx ; pip install glob ; pip install xlwings```を実行する
 5. ターミナルで```python convert.py```を実行する
 6. 終了
