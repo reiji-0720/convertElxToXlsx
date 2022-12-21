@@ -1,4 +1,4 @@
-# convertElxToXlsx
+# [エクセル] xlsをxlsxに変換するプログラム
 xlsファイルをxlsxファイルに変換
 ---
 
