@@ -5,11 +5,11 @@ from libs import tree
 # convert.convert_type_current()
 # convert.open()
 
-# convert.simple_check() # カレントディレクトリ下部のファイルに対して実行
+convert.simple_check() # カレントディレクトリ下部のファイルに対して実行
 
 # convert.convertion(filename='') # filenameのところには変換したいファイル名の相対パスを入力
 # convert.remove() #.xlsファイル削除
-tree.tree('./')
+# tree.tree('./')  # ターミナルにツリー表示
 
 
 
