@@ -63,7 +63,7 @@ https://qiita.com/horisuke/items/389ec60407b3baf45f25)
 ツリーはターミナルに表示される  
 ※ mac OS のみ対応、winの場合は¥区切りにする必要がある  
 
-**関数**
+**関数**  
 tree(path)  
 ディレクトリ構造を表示したい絶対パスor相対パスを引数に当てる  
 
