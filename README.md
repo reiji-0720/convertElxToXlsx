@@ -58,7 +58,8 @@ xlsファイルの削除
 
 ### tree.py
 ディレクトリ構造を書き出すためのモジュール  
-(参考：@horisuke, Pythonでファイルのツリー構造を出力する,Qiita,2020年04月17日,https://qiita.com/horisuke/items/389ec60407b3baf45f25)  
+(参考：@horisuke, Pythonでファイルのツリー構造を出力する,Qiita,2020年04月17日,  
+https://qiita.com/horisuke/items/389ec60407b3baf45f25)  
 ツリーはターミナルに表示される  
 ※ mac OS のみ対応、winの場合は¥区切りにする必要がある  
 
